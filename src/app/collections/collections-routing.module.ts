@@ -4,7 +4,7 @@ import {ColectionHomeComponent} from './colection-home/colection-home.component'
 
 
 const routes: Routes = [
-  {path: 'colections', component: ColectionHomeComponent}
+  {path: '', component: ColectionHomeComponent}
 ];
 
 @NgModule({
