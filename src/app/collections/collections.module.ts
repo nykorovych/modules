@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { CollectionsRoutingModule } from './collections-routing.module';
 import { ColectionHomeComponent } from './colection-home/colection-home.component';
+import { TableComponent } from './table/table.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
-  declarations: [ColectionHomeComponent],
+  declarations: [ColectionHomeComponent, TableComponent],
   imports: [
     CommonModule,
-    CollectionsRoutingModule
+    CollectionsRoutingModule,
+    SharedModule
   ],
   exports: []
 })
