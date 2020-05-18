@@ -4,9 +4,11 @@ import { HomeComponent} from './home/home.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 
 
+
 const routes: Routes = [
   { path: 'elements', loadChildren: () => import ('./elements/elements.module').then (m => m.ElementsModule)},
-  {path: 'colections', loadChildren: () => import ('./collections/collections.module').then (m => m.CollectionsModule)},
+  { path: 'colections', loadChildren: () => import ('./collections/collections.module').then (m => m.CollectionsModule)},
+  { path: 'view', loadChildren: () => import ('./views/views.module').then(m => m.ViewsModule)},
   { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent}
 ];
