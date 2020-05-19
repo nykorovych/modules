@@ -12,6 +12,10 @@ stats = [
   {value: 55, lable: ' # of revenu'},
   {value: 2, lable: ' Satisfacion Score'}
 
+];
+items = [
+  {image: '/assets/images/couch.jpg', title: 'Couch', description: "super couch" },
+  {image: '/assets/images/dresser.jpg', title: 'Dresser', description: 'super dresser to put staff on'}
 ]
 
   constructor() { }

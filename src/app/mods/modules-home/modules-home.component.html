@@ -1,0 +1,17 @@
+<app-divider>Modal</app-divider>
+<button (click)="onClick()">Modal</button>
+<app-modal (close) = "onClick() " *ngIf="modalOpened">
+    <div modalHeader>
+        Reuseable Header
+    </div>
+    <div modalContent>
+        <p>
+            Some content for the REUSEABLE modal window
+        </p>
+    </div>
+    <div modalFooter>
+        <button (click) = "onClose()" class="ui button"> OK</button>
+    </div>
+ 
+</app-modal>
+
